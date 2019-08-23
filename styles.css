@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+}
+
+.header {
+    height: 80px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 100px;
+}
+
+.cover-image {
+    width: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
