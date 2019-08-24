@@ -13,38 +13,53 @@
 </head>
 
 <body>
-    <div class="header">
-        <img src="images/logo.svg" alt="Logo">
-    </div>
+    <div class="container">
+        <div class="content">
+            <header class="logo">
+                <img src="images/logo.svg" alt="Logo">
+            </header>
 
-    <img class="cover-image" src="images/hero-mobile.jpg" alt="Cover Image">
+            <picture class="cover-mobile">
+                <source>
+                <source media="(max-width: 961px)" srcset="images/hero-mobile.jpg">
+                <img>
+            </picture>
 
-    <section class="message">
-        <header>
-            <h1>
-                <span class="first">We're</span>
-                <span>coming</span>
-                <span>soon</span>
-            </h1>
-        </header>
+            <section class="info">
+                <header class="title">
+                    <h1>
+                        <span>We're</span>
+                        <span>coming</span>
+                        <span>soon</span>
+                    </h1>
+                </header>
 
-        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with
-            announcements and our launch deals.</p>
+                <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date
+                    with announcements and our launch deals.</p>
 
-        <div class="email">
-            <input type="email" placeholder="Email Address">
-            <div class="icon">
-                <img src="images/icon-arrow.svg" alt="Arrow">
-            </div>
+                <form class="subscribe">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit" class="icon">
+                        <img src="images/icon-arrow.svg" alt="Arrow submit button">
+                    </button>
+                </form>
+
+                <footer>
+                    <p class="attribution">
+                        Challenge by
+                        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+                        <a href="https://github.com/0gener" target="_blank">0gener</a>.
+                    </p>
+                </footer>
+            </section>
         </div>
-    </section>
-    <footer>
-        <p class="attribution">
-            Challenge by
-            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-            <a href="https://github.com/0gener" target="_blank">0gener</a>.
-        </p>
-    </footer>
+
+        <picture class="cover-desktop">
+            <source>
+            <source media="(min-width: 961px)" srcset="images/hero-desktop.jpg">
+            <img>
+        </picture>
+    </div>
 </body>
 
 </html>
