@@ -93,12 +93,18 @@ body {
     background-color: transparent;
     border: none;
     width: 100%;
+    padding-left: 15px;
+    color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.subscribe input:focus, .subscribe button:hover {
+    outline: none;
 }
 
 .subscribe input::placeholder {
     color: hsl(0, 36%, 70%);
     font-family: 'Josefin Sans', sans-serif;
-    padding-left: 15px;
 }
 
 .subscribe button {
